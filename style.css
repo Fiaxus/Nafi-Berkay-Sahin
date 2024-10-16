@@ -8,11 +8,6 @@ body{
     
     
 }
-
-link[rel="icon"] {
-    border-radius: 50%;
-  }
-
 #sayfa{
     width: 1200px;
     min-height: 100vh;
