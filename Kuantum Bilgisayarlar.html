@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nafi Berkay Şahin</title>
+    <meta name="description" content="Nafi Berkay Şahin">
+    <meta name="keywords" content="nafi, berkay, şahin, html, css, kişisel, blog ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="sayfa">
+      <header id="banner">
+        <div id="logo">
+          <a href="index.html"><img src="resimler/logom.png" alt="Kişisel Blog" title="Nafi Berkay Şahin | Kişisel Blog"></a>
+        </div>
+      </header>
+      <nav id="anamenu">
+        <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="projelerim.html">Projelerim</a></li>
+        <li><a href="hakkimda.html">Hakkımda</a></li>
+        <li><a href="anket.html">Anket</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <section class="articleveaside">
+      <article id="icerik">
+        <div id="blogiçiresim">
+        <img src="resimler/kuantumbilgisayarlar.jpg" alt="Kuantum Bilgisayarlar" title="Kuantum Bilgisayarlar" class="blogiçiresim">
+      </div>
+        <h1 id="kuantumbaslik">Kuantum Bilgisayarlar: Geleceğin Hesaplama Gücü</h1>
+        <p id="kuantumyazı">Merhaba, teknoloji meraklıları!</p>
+        <p id="kuantumyazı">
+            
+            Bugün sizlere oldukça heyecan verici bir konudan bahsedeceğim: kuantum bilgisayarlar! Belki daha önce duymuşsunuzdur, ama kuantum bilgisayarlar hakkında biraz daha derine inmeye ne dersiniz? Bu konu, bence teknoloji dünyasının en heyecan verici gelişmelerinden biri!
+
+            Öncelikle, kuantum bilgisayarların ne olduğunu anlamamız gerekiyor. Basitçe ifade etmek gerekirse, klasik bilgisayarlar, verileri "0" ve "1" şeklinde saklarken, kuantum bilgisayarlar bu verileri "kuantum bit" veya kısaca "qubit" olarak saklar. Qubitler, hem "0" hem de "1" olabiliyor! Bu özellik, kuantum bilgisayarların hesaplama gücünü devasa bir şekilde artırıyor.
+
+            Ama merak ediyorsunuzdur, peki bu ne anlama geliyor? Klasik bilgisayarlar, karmaşık problemleri çözmekte zorlanırken, kuantum bilgisayarlar bu problemleri çok daha hızlı çözebiliyor. Örneğin, büyük veri setlerini analiz etmek veya karmaşık simülasyonlar yapmak, kuantum bilgisayarların uzmanlık alanı!
+
+            Düşünün, bir gün kuantum bilgisayarlar sayesinde hastalıkların tedavi yöntemlerini daha hızlı bulabiliriz ya da iklim değişikliği gibi büyük sorunlara karşı daha etkili çözümler geliştirebiliriz. Bu, gerçekten de gelecekte hayatımızı nasıl değiştirebileceği konusunda heyecan verici bir senaryo, değil mi?
+
+            Tabii ki, her güzel şeyin bir bedeli var. Kuantum bilgisayarların geliştirilmesi hala çok yeni bir alan. Evet, araştırmalar hızla devam ediyor, ama henüz günlük yaşamımızda yaygın olarak kullanılmıyorlar. Bununla birlikte, büyük teknoloji şirketleri ve üniversiteler bu alanda yoğun bir şekilde çalışıyor, ve bu da gelecekte neler olabileceği konusunda umut verici bir durum.
+
+            Sonuç olarak, kuantum bilgisayarlar, bize daha önce hayal bile edemeyeceğimiz hesaplama gücü sunuyor. Belki de birkaç yıl içinde hayatımızın vazgeçilmez bir parçası olacaklar. Teknolojinin bu muazzam gelişimine tanıklık etmek gerçekten heyecan verici!
+
+            Peki, siz kuantum bilgisayarlar hakkında ne düşünüyorsunuz? Sizi en çok heyecanlandıran yönü nedir? Düşüncelerinizi merak ediyorum, lütfen yorumlarda paylaşın!</p>
+
+            <p id="kuantumyazı">Sevgiyle kalın!</p>
+        
+      </article>
+      
+    </section>
+      <footer id="altmenu">
+        <h3>© Tüm hakları saklıdır.</h3>
+        <div class="scroll-wrapper">
+
+          <a href="#top" class="scroll-to-top">
+          <span class="up-arrow">^</span>
+        Yukarı Çık
+          </a>
+          
+      </div>
+      </footer>
+      <div id="top"></div>
+   </div>
+   <script>
+
+    // Resmi ve konteyneri seç
+const image = document.querySelector('.blogiçiresim');
+
+window.addEventListener('scroll', () => {
+    // Sayfanın kaydırma miktarını al
+    const scrollY = window.scrollY;
+
+    // Resmin ne kadar kaymasını istediğinize karar verin. Mesela %20 oranında kayma
+    const imageOffset = scrollY * 0.2;
+
+    // Resmi kaydırmak için CSS translateY kullanın
+    image.style.transform = `translateY(${imageOffset}px)`;
+});
+
+    // Butona tıklandığında yukarı kaydır
+document.querySelector('.scroll-to-top').onclick = function(event) {
+    event.preventDefault(); // Varsayılan davranışı engelle
+    window.scrollTo({top: 0, behavior: 'smooth'}); // Yukarı kaydır
+};
+
+   </script>
+</body>
+</html>

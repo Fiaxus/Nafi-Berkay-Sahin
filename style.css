@@ -1,0 +1,472 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background: url(/resimler/tech.jpg);
+    
+    
+}
+#sayfa{
+    width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    background-color:white;
+}
+#banner{
+    width: 1199px;
+    height: 250px;
+    margin: auto;
+    background-color: white;
+
+}
+#logo{
+   text-align: center;
+}
+/*Ana Menü*/
+#anamenu{
+    width: 1199px;
+    height: 65px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin: auto;
+    background-color: white;
+}
+#anamenu ul{
+list-style-type: none;
+
+list-style: none;
+
+}
+#anamenu ul li{
+    padding: 20px;
+    float: left;
+    position: relative;
+    left: 350px;
+}
+#anamenu ul a{
+    padding: 5px;
+    text-decoration: none;  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
+
+    position: relative;
+    text-decoration: none;
+}
+#anamenu ul a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rgb(9, 101, 126);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+#anamenu ul a:hover::before {
+    width: 100%;
+}
+
+#anamenu ul a:hover{
+    color: rgb(9, 101, 126);
+
+}
+/*İçerik ve Yan Menü */
+
+.articleveaside{
+    display: flex;          /* Flexbox yapısını aktif eder */
+    align-items: stretch;   /* Yüksekliği eşitler */
+}
+
+#icerik{
+    min-width: 800px;
+    min-height: 100vh;
+    background-color: white;
+    float: left;
+}
+
+#yanmenu{
+    width: 400px;
+    min-height: 100vh;
+    background-color: white;
+    float: right;
+
+}
+
+/*Alt Menü*/
+#altmenu{
+    position: relative; /*Footer konumunu ayarlar*/
+    width: 1200px;
+    height: 185px;
+    border-top: 2px solid #ddd;
+    background-color: white;
+    float: left;
+}
+#altmenu h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;  
+    margin-top: 85px;
+
+}
+.scroll-wrapper {
+    display: flex; /* Flexbox kullanarak öğeleri yan yana yerleştirir */
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-arrow {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-to-top {
+    position: absolute; /* Footer içinde sabit konum */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/*Anket*/
+#anket{
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#anketbuton{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#anketbuton:hover{
+    background-color: #0056b3;
+}
+
+#seçenekler{
+    margin: 10px;
+    
+}
+
+/* Popup ayarlama*/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    background: url(/resimler/popuparkaplan.png);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: none;
+}
+.popupgiris {
+    color: white;
+}
+  
+.kapatma-butonu {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+  
+.kapatma-butonu:hover {
+    background-color: #ddd;
+}
+  
+  /*iletişim bana ulaşın kısmı*/
+
+#banaulasın {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#iletisimform {
+    margin-top: 10px;
+}
+
+#iletisiminput, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#iletisimbuton {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#iletisimbuton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    #banaulasın {
+        width: 90%;
+    }
+}
+#banaulasınbaslık{
+    text-align: center;
+    margin-top: 75px;
+    color: #007BFF;
+}   
+/*Projeler kısmı*/
+#projelerim {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.proje-container {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 75%; 
+    height: auto;
+}
+
+#linkyazı{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+#linkyazı a{
+    color: black;
+    text-decoration: none;
+}
+#linkyazı a:hover {
+    color: rgb(9, 101, 126);
+}
+#sertifikayazı{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    margin-top: 10px;
+}
+#sertifikayazı a{
+    color: black;
+    text-decoration: none;
+}
+#sertifikayazı a:hover {
+    color: rgb(9, 101, 126);
+}
+
+/*iletisim bilgi*/
+
+.iletisimbilgi {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 85px;
+  }
+  
+  .konum, .telefon, .email {
+    margin-bottom: 30px;
+  }
+  
+  .konum i, .telefon i, .email i {
+    font-size: 24px;
+    margin: 10px;
+  }
+  .iletisimbilgi .email #emailyazı a{
+    text-decoration: none;
+    color: black;
+  }
+  .iletisimbilgi .email #emailyazı a:hover{
+    color: rgb(9, 101, 126);
+  }
+
+ #message {
+    resize: none;
+
+  }
+/*aside kısmı içerik*/
+
+#asidekomple{
+    position: sticky;
+    top: 50px;
+}
+
+.yanmenuicerik {
+    background-color: white;
+    padding: 100px;
+}
+
+.profil {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profilfoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.sosyalmedyalink {
+    display: flex; /* İkonları yan yana dizmek için */
+    justify-content: center;
+}
+
+.ikon {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+.ikon:hover{
+    transform: scale(1.2); /* Resmin boyutunu %5 artır */
+}
+
+/*Hakkımda kısmı içerik*/
+
+#hakkımdaicerik{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#hakkımdaparagraf{
+    font-size: large;
+    line-height: 35px;
+    padding: 50px;
+    text-indent: 50px;
+}
+
+/*Anasayfa kısmı içerik*/
+
+#icerikbaslik{
+    text-align: center;
+    margin-top: 50px;
+    font-size: large;
+}
+
+.blog-container {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px; 
+}
+
+
+.blog-post {
+    margin: 10px; 
+    padding: 15px;
+    text-align: center;
+    width: 300px; 
+}
+
+.blog-post img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 15px;
+}
+
+.blog-post h2 {
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.blog-post p {
+    color: black;
+    text-align: left;
+    line-height: 1.5em;
+}
+.blog-post a{
+    color: black;
+    text-decoration: none;
+}
+.blog-post a:hover{
+    color: rgb(9, 101, 126);
+}
+#tarih{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(151, 151, 151);
+}
+.zoom{
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+.zoom:hover{
+    transform: scale(1.1); /* Resmin boyutunu %5 artır */
+}
+/*Blog Yazıları*/
+
+#yapayzekabaslik{
+    text-align: center;
+    margin-top: 50px;
+}
+#yapayzekayazı{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    line-height: 35px;
+    text-indent: 50px;
+    margin-bottom: 50px;
+}
+#kuantumbaslik{
+    text-align: center;
+    margin-top: 50px;
+}
+#kuantumyazı{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    line-height: 35px;
+    text-indent: 50px;
+    margin-bottom: 50px;
+}
+.blogiçi {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 25px; 
+}
+#blogiçiresim{
+    width: 100%;
+    overflow: hidden; /* Resim dışındaki alanı gizlemek için */
+}
+.blogiçiresim{
+    width: 100%;
+    height: auto;
+    transform: translateY(0); /* Başlangıç noktası */
+    transition: transform 0.1s linear; /* Pürüzsüz geçiş için */
+}
+

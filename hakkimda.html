@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nafi Berkay Şahin</title>
+    <meta name="description" content="Nafi Berkay Şahin">
+    <meta name="keywords" content="nafi, berkay, şahin, html, css, kişisel, blog ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Pop up-->
+<div class="popup">
+  <p class="popupgiris">Hoşgeldiniz!</p>
+  <button class="kapatma-butonu">Kapat</button>
+</div>
+
+   <div id="sayfa">
+      <header id="banner">
+        <div id="logo">
+          <a href="index.html"><img src="resimler/logom.png" alt="Kişisel Blog" title="Nafi Berkay Şahin | Kişisel Blog"></a>
+        </div>
+      </header>
+      <nav id="anamenu">
+        <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="projelerim.html">Projelerim</a></li>
+        <li><a href="hakkimda.html">Hakkımda</a></li>
+        <li><a href="anket.html">Anket</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <section class="articleveaside">
+      <article id="icerik">
+        <h1 id="hakkımdaicerik">Ben Kimim ?</h1>
+        <p id="hakkımdaparagraf">Merhaba! Ben Nafi Berkay Şahin, bilgisayar ve teknoloji ile ilgilenen bir insanım.
+           Küçüklüğümden beri video oyunları ve grafik tasarım ile iç içeyim.
+           Bu tutku, zamanla kendimi yazılım alanında geliştirmek istemem ile gelişti.          
+          Bu web sitesi, benim benimle aynı ilgi alanlarına sahip insanlarla bağlantı kurmak için oluşturduğum bir platform. Burada blog yazıları, projeler veya başka içerikler bulabilir, benimle iletişime geçebilirsiniz.
+          
+          Hedefim, ilham vermek ve bilgi paylaşmak. Umarım bu yolculukta benimle birliktesinizdir!</p>
+
+      </article>
+      <aside id="yanmenu">
+        <div id="asidekomple">
+        <div class="yanmenuicerik">
+          <div class="profil">
+              <img src="/resimler/ben.jpeg" alt="Ben" title="Ben" class="profilfoto">
+          </div>
+          <div class="sosyalmedyalink">
+              <a href="https://www.instagram.com/nafi.berkay/" target="_blank">
+                  <img src="/resimler/instagram-logo.png" alt="Instagram" title="İnstagram" class="ikon">
+              </a>
+              <a href="https://www.linkedin.com/in/nafi-berkay-%C5%9Fahin-511871298/" target="_blank">
+                  <img src="resimler/linkedin-logo.png" alt="LinkedIn" title="Spotify" class="ikon">
+              </a>
+              <a href="https://open.spotify.com/user/21ja3b2qqcm7pzkx2dyi2sbba?si=f56ef99f0d5d476a" target="_blank">
+                  <img src="resimler/spotify-logo.png" alt="Spotify" title="Linkedİn" class="ikon">
+              </a>
+            </div>
+          </div>
+      </div>
+
+      </aside>
+    </section>
+      <footer id="altmenu">
+        <h3>© Tüm hakları saklıdır.</h3>
+        <div class="scroll-wrapper">
+
+          <a href="#top" class="scroll-to-top">
+          <span class="up-arrow">^</span>
+        Yukarı Çık
+          </a>
+          
+      </div>
+      </footer>
+      <div id="top"></div>
+   </div>
+
+
+
+   <script>
+    // Popup
+    let popup = document.querySelector(".popup");
+    
+    // Kapatma butonu
+    let kapatmaButonu = document.querySelector(".kapatma-butonu");
+    
+    // Sayfa yüklendiğinde popup açma
+    window.addEventListener("load", function() {
+      popup.style.display = "block";
+    });
+    
+    // Kapatma butonuna tıklandığında popup kapatma
+    kapatmaButonu.addEventListener("click", function() {
+      popup.style.display = "none";
+    });
+
+    // Butona tıklandığında yukarı kaydır
+document.querySelector('.scroll-to-top').onclick = function(event) {
+    event.preventDefault(); // Varsayılan davranışı engelle
+    window.scrollTo({top: 0, behavior: 'smooth'}); // Yukarı kaydır
+};
+
+    </script>   
+</body>
+</html>
