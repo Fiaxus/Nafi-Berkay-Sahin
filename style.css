@@ -4,7 +4,7 @@
 
 }
 body{
-    background: url(/resimler/tech.jpg);
+    background: url(./resimler/tech.jpg);
     
     
 }
@@ -170,7 +170,7 @@ list-style: none;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    background: url(/resimler/popuparkaplan.png);
+    background: url(./resimler/popuparkaplan.png);
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
